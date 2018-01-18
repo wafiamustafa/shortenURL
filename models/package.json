@@ -1,0 +1,28 @@
+{
+  "name": "models",
+  "version": "1.1.0",
+  "description": "shortURL Models",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test/{'',**,**/**}/*Test.js || true",
+    "autotest": "nodemon -w test/ --exec nyc npm run test",
+    "security": "snyk test."
+  },
+  "author": "Diaa Kasem <me@diaa.me>",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "helpers": "0.0.6",
+    "mongoose": "^4.13.7",
+    "mz": "^2.7.0",
+    "sinon": "^4.1.5",
+    "sinon-chai": "^2.14.0"
+  },
+  "localDependencies": {
+    "helpers": "../helpers"
+  },
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "proxyquire": "^1.8.0"
+  }
+}

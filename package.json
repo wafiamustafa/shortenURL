@@ -1,0 +1,31 @@
+{
+  "name": "shortenurl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc --reporter=html --reporter=text node_modules/.bin/mocha {models,helpers}/test/{'',**,**/**}/*Test.js controllers/{auth,gql}/test/{'',**,**/**}/*Test.js",
+    "autotest": "node_modules/.bin/mocha -w npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wafiamustafa/shortenURL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wafiamustafa/shortenURL/issues"
+  },
+  "homepage": "https://github.com/wafiamustafa/shortenURL#readme",
+  "dependencies": {
+    "mongoose": "^5.0.0",
+    "react-native-google-shortener": "^1.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "faker": "^4.1.0",
+    "mocha": "^4.1.0",
+    "sinon": "^4.1.3",
+    "sinon-chai": "^2.14.0"
+  }
+}
