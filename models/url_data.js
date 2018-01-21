@@ -5,15 +5,11 @@ module.exports = function(mongoose) {
 
   let schema = new Schema({
     originalUrl: String,
-    shortUrl: String,
-    shortClickCount: {
+    short: String,
+    clickCount: {
       type: Number, 
       default: 0
     },
-    longClickCount: {
-      type: Number, 
-      default: 0
-    }
   }, {
     timestamps: true
   });

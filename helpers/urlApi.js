@@ -1,3 +1,4 @@
+// It uses Google Sevices
 const {
     setKey,
     shorten,

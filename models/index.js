@@ -4,11 +4,8 @@ const mongoose = require('mongoose');
 
 require('./url_data')(mongoose);
 
-
-// config.dev.yml
-
 //let connectionString = process.env.mongodb ||  'mongodb://qariiteam:qariiteam@ds247007.mlab.com:47007/dupwork?poolSize=100&connectTimeoutMS=600000&socketTimeoutMS=600000';
-let connectionString = 'connectionstring';
+let connectionString = process.env.mongodb || 'mongodb://wafia:123456@ds263707.mlab.com:63707/shorturl';
 /**
  * Loads a model
  * @param collectionName The name to load

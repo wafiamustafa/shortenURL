@@ -1,0 +1,2 @@
+mongodb: 'mongodb://wafia:123456@ds263707.mlab.com:63707/shorturl'
+ENV: 'dev'
